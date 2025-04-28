@@ -16,5 +16,9 @@
     "url": "https://github.com/Hasanhayat/express-js-server/issues"
   },
   "homepage": "https://github.com/Hasanhayat/express-js-server#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
 }
