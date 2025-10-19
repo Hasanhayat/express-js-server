@@ -1,26 +1,11 @@
 import express from "express";
-import mongoose from "mongoose";
 import cors from "cors";
-import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken";
-import multer from "multer";
-import cloudinary from "cloudinary";
-import { GoogleGenerativeAI } from "@google/generative-ai";
-import { PDFParse } from "pdf-parse";
-import dotenv from "dotenv";
-import fs from "fs";
-import path from "path";
-import bodyParser from "body-parser";
 
-import { fileURLToPath } from "url";
-
-dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
-
 
 
 app.get("/", (req, res) => {
