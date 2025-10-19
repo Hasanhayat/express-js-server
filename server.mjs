@@ -1,5 +1,15 @@
 import express from "express";
+import mongoose from "mongoose";
 import cors from "cors";
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
+import multer from "multer";
+import { GoogleGenerativeAI } from "@google/generative-ai";
+import { PDFParse } from "pdf-parse";
+import dotenv from "dotenv";
+import fs from "fs";
+import bodyParser from "body-parser";
+
 
 const app = express();
 const PORT = process.env.PORT || 3001;
